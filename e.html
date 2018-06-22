@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title></title>
+	  <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <style>
+     .jumbotron{background-color:rgba(030, 136, 229, 0.4); color: white;}
+	 /* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.bg-black{
+color: white;
+background-color:black;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+	width: 100%;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 0px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 5%.0%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+   </style>
+   <body style="background-image: url(bk.gif); background-size: cover; background-attachment: fixed;">
+   
+
+<div>
+         <nav class="navbar navbar-inverse">
+		   <div class="container-fluid">
+		      <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="#">Website</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				   <ul class="nav navbar-nav">
+				     <li><a href="index.html">Home</a></li>
+					 <li><a href="reg.html">Register</a></li>
+					 <li class="active text-primary"><a href="about.html">About Us</a></li>
+					 <li><a href="Contact.html">Contact Me</a></li>
+				   </ul>
+				   <ul class="nav navbar-nav navbar-right">
+				      <li><a href="reg.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+					  <li><a onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-inove"></span>Login</a></li>
+				   </ul>
+				</div>
+		   </div>
+		</nav>
+</div>
+    <div style="margin: 100px">
+        <div class="container">
+	        <div class="jumbotron">
+		       <h1>car</h1>
+		       <p>A car (or automobile) is a wheeled motor vehicle used for transportation. Most definitions of car say they run primarily on roads, seat one to eight people, have four tires, and mainly transport people rather than goods.[2][3] Cars came into global use during the 20th century, and developed economies depend on them. The year 1886 is regarded as the birth year of the modern car when German inventor Karl Benz built his Benz Patent-Motorwagen. Cars became widely available in the early 20th century. One of the first cars that were accessible to the masses was the 1908 Model T, an American car manufactured by the Ford Motor Company. Cars were rapidly adopted in the US, where they replaced animal-drawn carriages and carts, but took much longer to be accepted in Western Europe and other parts of the world.
+
+Cars have controls for driving, parking, passenger comfort and safety, and controlling a variety of lights. Over the decades, additional features and controls have been added to vehicles, making them progressively more complex. Examples include rear reversing cameras, air conditioning, navigation systems, and in car entertainment. Most cars in use in the 2010s are propelled by an internal combustion engine, fueled by the combustion of fossil fuels. This causes air pollution and also contributes to climate change and global warming.[4] Vehicles using alternative fuels such as ethanol flexible-fuel vehicles and natural gas vehicles are also gaining popularity in some countries. Electric cars, which were invented early in the history of the car, began to become commercially available in 2008.<p>
+		    </div>
+	    </div>
+	</div>
+    <div style="margin-top:10px">
+        <ul class="pager">
+	       <li><a href="d.html">previous</a></li>
+		      <ul class="pagination">
+		        <li><a href="about.html">1</a></li>
+			    <li><a href="a.html">2</a></li>
+			    <li><a href="b.html">3</a></li>
+				<li><a href="c.html">4</a></li>
+				<li><a href="d.html">5</a></li>
+				<li class="active"><a href="e.html">6</a></li>
+	     	  </ul>
+		   <li><a href="#">Next</a></li>
+	    </ul>
+	</div>
+		      <!--Log In-->
+	  	  <div id="id01" class="modal">
+  
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avvatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+   </body>
+</html>

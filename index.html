@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>
+	  </title>
+	  <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <style>
+   
+	  form{color: black;}
+	  .jumbotron
+   {
+   background-color: rgba ( 255, 255, 255, 0.7);
+   }
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.bg-black{
+color: white;
+background-color:black;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+	width: 100%;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 0px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+.page-footer:before {
+    content: " ";
+    display: block;
+    height: 5px;
+    background: url(pattern.png) left top repeat-x;
+}
+
+.page-footer {
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    height: 50px;
+    }
+
+    .page-footer .copyright {
+        float: left;
+    }
+
+    .page-footer .credits {
+        float: right;
+    }
+
+.page-footer-content {
+    padding: 1em 0;
+}
+</style>
+   </head>
+   <body style="background-image:url(bk.jpg); background-attachment: fixed; color:white">
+   
+<div>
+         <nav class="navbar navbar-inverse">
+		   <div class="container-fluid">
+		      <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="#">Website</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				   <ul class="nav navbar-nav">
+				     <li class="active text-primary"><a href="#">Home</a></li>
+					 <li><a href="reg.html">Register</a></li>
+					 <li><a href="about.html">About Us</a></li>
+					 <li><a href="Contact.html">Contact Me</a></li>
+				   </ul>
+				   <ul class="nav navbar-nav navbar-right">
+				      <li><a href="reg.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+					  <li><a onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-inove"></span>Login</a></li>
+				   </ul>
+				</div>
+		   </div>
+		</nav>
+</div>
+<div id="myCarousel" class="carousel slide bg-primary" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active" style="background-image: url(1.jpg); background-size: cover; height: 800px; border: 1px solid black;">
+            <div class="row" style="margin:20px">
+		       <div class="col-sm-4 text-left">
+		          <p style="font-size:80px">Ferrari 458</p>
+		          <p style="font-size:40px">awesome-2014-ferrari-458-italia-about-caaefadbdb</p>
+		       </div>
+			   <div class="col-sm-1">
+			   </div>
+		       <div class="col-sm-7 text-center" style="margin: 50px">
+		          <p style="font-size:25px">The Ferrari 458 Italia is a mid-engined sports car produced by the Italian sports car manufacturer Ferrari. The 458 replaced the Ferrari F430, and was first officially unveiled at the 2009 Frankfurt Motor Show.</p>
+		       </div>
+		   </div>
+       </div>
+      <div class="item" style="background-image: url(2.jpg); background-size: cover; height: 800px; border: 1px solid black;">
+        <div class="row" style="margin:20px">
+		       <div class="col-sm-4 text-left">
+		          <p style="font-size:80px">BUGATTI CHIRON SPORT</p>
+		          <p style="font-size:40px">100th vehicle goes to a customer in the Middle East</p>
+		       </div>
+			   <div class="col-sm-1">
+			   </div>
+		       <div class="col-sm-7 text-center" style="margin: 50px">
+		          <p style="font-size:20px">Bugatti is celebrating the production and delivery of the 100th Chiron. This week, the car left “L‘Atelier“ at Bugatti’s headquarters in Molsheim, Alsace, where the 1,500 PS super sports car has been hand-crafted since the end of 2016. The 100th Chiron goes to a customer from the Arabian Peninsula, who has opted for an especially attractive configuration.</p>
+		       </div>
+		   </div>
+      </div>
+      <div class="item" style="background-image: url(3.jpg); background-size: cover; height: 800px; border: 1px solid black;">
+        <div class="row" style="margin:20px">
+		       <div class="col-sm-4 text-left">
+		          <p style="font-size:80px">Lamborghini</p>
+		          <p style="font-size:40px">Fast is fine, but accuracy is everything.</p>
+		       </div>
+			   <div class="col-sm-1">
+			   </div>
+		       <div class="col-sm-7 text-center" style="margin: 50px">
+		          <p style="font-size:25px">Automobili Lamborghini S.p.A. is unrivalled worldwide as a manufacturer of visionary, cutting edge and pure super sports cars. Lamborghini cars are incompara.</p>
+		       </div>
+		   </div>
+      </div>
+	  <div class="item" style="background-image: url(4.jpg); background-size: cover; height: 800px; border: 1px solid black;">
+        <div class="row" style="margin:20px">
+		       <div class="col-sm-4 text-left">
+		          <p style="font-size:80px">lykan-hypersport</p>
+		          <p style="font-size:40px">W Motors’ Lykan HyperSport Prototype Zero launched.</p>
+		       </div>
+			   <div class="col-sm-1">
+			   </div>
+		       <div class="col-sm-7 text-center" style="margin: 50px">
+		          <p style="font-size:25px">W Motors, the first Arab developer of high performance luxury sports cars based in the Middle East, recently held an exciting event at Abu Dhabi’s Yas Marina Circuit, one of the most advanced Grand Prix venues in the world.</p>
+		       </div>
+		   </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+      <header>
+	         <div class="container">
+		         <div class="jumbotron text-center"  style="margin-top: 50px; padding-top:5px; padding-bottom:5px;">
+	                <h1 style="text-shadow: 15px 15px 3px black;color: red;">Speed of world</h1>
+		            <p class="small text-warning">The top most fastest cars in the world</p>
+				 </div>
+			 </div>
+	  </header>
+                <!--Slider-->
+
+	  <section>
+	    <div class="container-fluid">
+		     
+			 <div style="color: white">
+			    <div class="row">
+				   <div class="col-md-4">
+				       <img src="p1.png" alt="car" width="400px" title="Bugatti">
+					      <h3>Bugatti</h3>>
+				            <p><span style="font-weight: bold">Founder: </span>Ettore Bugatti</p>
+				            <p><span style="font-weight: bold">Founded: </span>1909; 109 years ago</p>
+				            <p><span style="font-weight: bold">Headquarters: </span>Molsheim, Alsace, France</p>
+				            <p><span style="font-weight: bold">Products: </span>Automobiles</p>
+				            <p><span style="font-weight: bold">Website: </span>www.bugatti.com</p>
+				   </div>
+				   <div class="col-md-4">
+				       <img src="p2.jpg" alt="car" width="400px" title="Lykan-Hypersport" class="thumbnail">
+					      <h3>Lykan-Hypersport</h3>>
+				             <p><span style="font-weight: bold">Founder: </span>Ralph R. Debbas Sari El Kahalil</p>
+				             <p><span style="font-weight: bold">Founded: </span>Lebanon (July 11, 2012)</p>
+				             <p><span style="font-weight: bold">Headquarters: </span>Dubai, UAE</p>
+				             <p><span style="font-weight: bold">Products: </span>Luxury automobiles</p>
+				             <p><span style="font-weight: bold">Website: </span>www.wmotors.ae</p>
+				   </div>
+				   <div class="col-md-4">
+				       <img src="p3.png" alt="car" width="400px" title="Ferrari">
+					          <h3 style="margin-top: 80px;">Ferrari</h3>>
+				                 <p><span style="font-weight: bold">Founder: </span>Enzo Ferrari</p>
+				                 <p><span style="font-weight: bold">Founded: </span>13 September 1939</p>
+				                 <p><span style="font-weight: bold">Headquarters: </span>Amsterdam </p>
+				                 <p><span style="font-weight: bold">Products: </span>Sports cars</p>
+				                 <p><span style="font-weight: bold">Website: </span>ferrari.com</p>
+				   </div>
+				</div>
+			 </div>
+		</div>
+	  </section>
+	  
+	      <!--Log In-->
+	  	  <div id="id01" class="modal">
+  
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avvatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<footer class="page-footer">
+    <div class="page-footer-content">
+        <h5 class="copyright">&copy;All Content Copyright 2018 - Blitz. All Rights Reserved&reg;</h5>
+        <h5 class="credits">Site Designed by arun</h5>
+    </div>
+</footer>
+   </body>
+
+
+</html>

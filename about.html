@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title></title>
+	  <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <style>
+     .jumbotron{background-color: rgba(136, 150, 0, 0.4); color: white;}
+	   form{color: black;}
+	  .jumbotron
+   {
+   background-color:rgba(211, 211, 211, 0.8);
+   }
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.bg-black{
+color: white;
+background-color:black;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+	width: 100%;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 0px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+   </style>
+   <body style="background-image: url(bk.gif); background-size: cover; background-attachment: fixed;">
+   
+<div>
+         <nav class="navbar navbar-inverse">
+		   <div class="container-fluid">
+		      <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="#">Website</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				   <ul class="nav navbar-nav">
+				     <li><a href="index.html">Home</a></li>
+					 <li><a href="reg.html">Register</a></li>
+					 <li class="active text-primary"><a href="about.html">About Us</a></li>
+					 <li><a href="Contact.html">Contact Me</a></li>
+				   </ul>
+				   <ul class="nav navbar-nav navbar-right">
+				      <li><a href="reg.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+					  <li><a onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-inove"></span>Login</a></li>
+				   </ul>
+				</div>
+		   </div>
+		</nav>
+</div>
+    <div style="margin: 100px">
+        <div class="container">
+	        <div class="jumbotron">
+		       <h1>Ferrari</h1>
+		       <p>Ferrari has a rich racing history and is a well known premium car brand. The fastest street Ferrari is the F50 GT1, which can go over 370 kph (about 222 mph). The most powerful Ferrari is the FXX, which has about 800 horsepower. The FXX is a lighter, improved version of the F60 Enzo; it is Ferrari's most exclusive model, which you have to be chosen to own. It is basically a race car that you can buy from Ferrari. The car is so extreme (completely flat tires, low ride height, and no roadcar safety features such as Airbags) that it cannot be driven on roads legally. Ferrari will keep it for you at their Factory in Maranello in Italy. You can go to Italy and drive it on their private race track, or have it transported to another race track around the world, the same as if you were driving for a racing team. Thirty have been built and all but two were sold to customers for $2,500,000 each. Ferrari gave one to seven-time Formula 1 World Champion Michael Schumacer, who had driven for Ferrari for ten years when he retired in 2006, having brought Ferrari much success. Ferrari made his FXX different by painting it black. The other twenty-nine are either red or white, with stripes painted in the other colour. A Ferrari is one of the richest selling cars in the world.<p>
+		    </div>
+	    </div>
+	</div>
+    <div style="margin-top:10px">
+        <ul class="pager">
+	       <li><a href="#">previous</a></li>
+		      <ul class="pagination">
+		        <li class="active"><a href="#">1</a></li>
+			    <li><a href="a.html">2</a></li>
+			    <li><a href="b.html">3</a></li>
+				<li><a href="c.html">4</a></li>
+				<li><a href="d.html">5</a></li>
+				<li><a href="e.html">6</a></li>
+	     	  </ul>
+		   <li><a href="a.html">Next</a></li>
+	    </ul>
+	</div>
+	
+		      <!--Log In-->
+	  	  <div id="id01" class="modal">
+  
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avvatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+   </body>
+</html>

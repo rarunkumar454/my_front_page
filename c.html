@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title></title>
+	  <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <style>
+     .jumbotron{background-color: rgba(225, 152, 0, 0.4); color: white;}
+	 /* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.bg-black{
+color: white;
+background-color:black;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+	width: 100%;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 0px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+   </style>
+   <body style="background-image: url(bk.gif); background-size: cover; background-attachment: fixed;">
+   
+
+<div>
+         <nav class="navbar navbar-inverse">
+		   <div class="container-fluid">
+		      <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="#">Website</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				   <ul class="nav navbar-nav">
+				     <li><a href="index.html">Home</a></li>
+					 <li><a href="reg.html">Register</a></li>
+					 <li class="active text-primary"><a href="about.html">About Us</a></li>
+					 <li><a href="Contact.html">Contact Me</a></li>
+				   </ul>
+				   <ul class="nav navbar-nav navbar-right">
+				      <li><a href="reg.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+					  <li><a onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-inove"></span>Login</a></li>
+				   </ul>
+				</div>
+		   </div>
+		</nav>
+</div>
+    <div style="margin: 100px">
+        <div class="container">
+	        <div class="jumbotron">
+		       <h1>BMW</h1>
+		       <p>This article is about the German automobile and motorcycle manufacturer. For other uses, see BMW (disambiguation).
+Bayerische Motoren Werke AG
+BMW.svg
+München - BMW-Hauptverwaltung.jpg
+BMW headquarters in Munich
+Type
+Aktiengesellschaft
+Traded as	FWB: BMW
+DAX Component
+Predecessor	Rapp Motorenwerke
+Bayerische Flugzeugwerke
+Founded	7 March 1916; 102 years ago
+Founder	Karl Rapp
+Headquarters	Munich, Germany
+Area served
+Worldwide
+Key people
+Norbert Reithofer
+(Chairman)
+Harald Krüger
+(CEO)
+Products	Automobiles, motorcycles
+Brands	
+BMW
+BMW i
+Mini
+Production output
+2,691,423 vehicles (2017)
+Revenue	€98.678 billion (2017)[1]
+Operating income
+€10.655 billion (2017)[1]
+Net income
+€8.706 billion (2017)[1]
+Total assets	€193.483 billion (2017)[1]
+Total equity	€54.548 billion (2017)[1]
+Owner	Stefan Quandt (29%)
+Susanne Klatten (21%)
+Public float (50%)
+Number of employees
+129,932 (2017)[1]
+Subsidiaries	
+List[show]
+Website	www.bmwgroup.com
+www.bmw.com
+BMW (Bayerische Motoren Werke in German, or Bavarian Motor Works in English) is a German multinational company which currently produces luxury automobiles and motorcycles, and also produced aircraft engines until 1945.
+
+The company was founded in 1916 and has its headquarters in Munich, Bavaria. BMW produces motor vehicles in Germany, Brazil, China, India, South Africa, the United Kingdom, and the United States. In 2015, BMW was the world's twelfth largest producer of motor vehicles, with 2,279,503 vehicles produced.[2] The Quandt family are long-term shareholders of the company, with the remaining stocks owned by public float.
+
+Automobiles are marketed under the brands BMW (with sub-brands BMW M for performance models and BMW i for plug-in electric cars), Mini and Rolls-Royce. Motorcycles are marketed under the brand BMW Motorrad.<p>
+		    </div>
+	    </div>
+	</div>
+    <div style="margin-top:10px">
+        <ul class="pager">
+	       <li><a href="b.html">previous</a></li>
+		      <ul class="pagination">
+		        <li><a href="about.html">1</a></li>
+			    <li><a href="a.html">2</a></li>
+			    <li><a href="b.html">3</a></li>
+				<li class="active"><a href="c.html">4</a></li>
+				<li><a href="d.html">5</a></li>
+				<li><a href="e.html">6</a></li>
+	     	  </ul>
+		   <li><a href="d.html">Next</a></li>
+	    </ul>
+	</div>
+		      <!--Log In-->
+	  	  <div id="id01" class="modal">
+  
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avvatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+   </body>
+</html>
